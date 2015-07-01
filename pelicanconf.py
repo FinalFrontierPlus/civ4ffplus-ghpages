@@ -22,7 +22,8 @@ LINKS =  (('Civfanatics Forum', 'http://forums.civfanatics.com/forumdisplay.php?
 
 # Social widget
 SOCIAL = (('CivFanatics', 'http://forums.civfanatics.com/forumdisplay.php?f=387'),
-          ('Github', 'https://github.com/FinalFrontierPlus/'))
+          ('Github', 'https://github.com/FinalFrontierPlus/'),
+          ('ModDB Page', 'http://www.moddb.com/mods/final-frontier-plus'))
 
 STATIC_PATHS = ['extras']
 
