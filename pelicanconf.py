@@ -5,7 +5,7 @@ AUTHOR = u'TC01 and God-Emperor'
 SITENAME = u'Final Frontier Plus'
 SITEURL = ''
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
 
@@ -15,16 +15,29 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
+LINKS =  (('Civfanatics Forum', 'http://forums.civfanatics.com/forumdisplay.php?f=387'),
+          ('ModDB Page', 'http://python.org/'),
           ('Jinja2', 'http://jinja.pocoo.org/'),
           ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('CivFanatics', 'http://forums.civfanatics.com/forumdisplay.php?f=387'),
+          ('Github', 'https://github.com/FinalFrontierPlus/'))
+
+STATIC_PATHS = ['extras']
+
+# Don't clutter the toplevel directory
+ARTICLE_URL = 'posts/{slug}.html'
+ARTICLE_SAVE_AS = 'posts/{slug}.html'
+
+# Favicon!
+EXTRA_PATH_METADATA = {
+	'extras/favicon.ico': {'path': 'favicon.ico'},
+}
 
 DEFAULT_PAGINATION = 10
+
+THEME = "themes/bootstrap-ffplus"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
